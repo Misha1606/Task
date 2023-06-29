@@ -1,0 +1,31 @@
+<MainWidget>:
+    orientation: 'vertical'
+    padding: 20
+    spacing: 20
+    number_input_1:number_1
+    number_input_2:number_2
+    summa_label:summa
+    TextInput:
+        multiline:False
+        size_hint:(.5, None)
+        pos_hint:{'center_x':0.5,"top":1}
+        height:50
+        font_size:30
+        id: number_2
+    TextInput:
+        multiline:False
+        size_hint:(.5, None)
+        pos_hint:{'center_x':0.5,"top":1}
+        height:50
+        font_size:30
+        id: number_1
+    Button:
+        font_size:30
+        text:'Сложить'
+        size_hint:(.5, None)
+        pos_hint:{"center_x":0.5,"top":1}
+        on_press:root.sum_numbers()
+    Label:
+        text:"Укажите числа"
+        font_size:30
+        id:summa
